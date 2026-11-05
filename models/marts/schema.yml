@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_satis_kurlar
+    description: "Satış detayları ile günlük dolar kurunun birleştirildiği ana olgu tablosu"
+    columns:
+      - name: siparis_id
+        description: "Benzersiz sipariş ID'si"
+        tests:
+          - unique
+          - not_null
+      - name: musteri_id
+        description: "Müşteri ID'si"
+        tests:
+          - not_null
+      - name: toplam_tutar_tl
+        description: "İndirimli toplam ciro (TL)"
+        tests:
+          - not_null

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Ham perakende ve dolar kuru Excel verileri"
+    tables:
+      - name: perakende_satis
+        description: "2024 perakende satış detayları"
+      - name: dolar_kuru
+        description: "2024 günlük dolar kuru verileri"
